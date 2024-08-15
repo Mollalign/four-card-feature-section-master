@@ -1,0 +1,148 @@
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 40px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28rem;
+}
+
+.topic-1 {
+  font-size: 30px;
+  color: hsl(229, 6%, 66%);
+  line-height: 29px;
+}
+
+.topic-2 {
+  font-size: 31px;
+  font-weight: 500;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 10px;
+}
+
+.paragraph-1 {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+}
+
+.second-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  position: relative;
+  background-color: white;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-1 {
+ border-top: solid 0.18rem hsl(180, 62%, 55%);
+}
+
+.card-2 {
+  border-top: solid 0.18rem hsl(0, 78%, 62%);
+}
+
+.card-3 {
+  border-top: solid 0.18rem hsl(34, 97%, 64%);
+}
+
+.card-4 {
+  border-top: solid 0.18rem hsl(212, 86%, 64%);
+}
+
+.name {
+  font-weight: bold;
+  color: hsl(234, 10%, 41%);
+  margin-bottom: 20px;
+}
+
+.text {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 100px;
+}
+
+.card-2-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.icon-container {
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+}
+
+.icon {
+  width: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+  .main-container {
+    margin: 20px;
+  }
+
+  .first-row {
+    align-items: start;
+    width: 18rem;
+  }
+  
+  .topic-1 {
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+  
+  .topic-2 {
+    font-size: 1.5rem;
+  }
+
+  .paragraph-1 {
+    text-align: start;
+  }
+
+  .second-row {
+    flex-direction: column;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 18rem;
+  }
+  
+  .text {
+    margin-bottom: 90px;
+  }
+}
